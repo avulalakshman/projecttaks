@@ -1,0 +1,27 @@
+[
+
+{
+
+"pid":1001,
+"name":"Lenovo Thinkpad",
+"price":45000.0
+
+},
+{
+
+"pid":1002,
+"name":"Dell XPS",
+"price":55000.0
+
+}
+,
+{
+
+"pid":1003,
+"name":"Mac Airbook",
+"price":85000.0
+
+}
+
+
+]

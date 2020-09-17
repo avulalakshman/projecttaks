@@ -1,0 +1,75 @@
+What is json?
+
+How json object will be converted java and java to JSON?
+
+
+Load data from ipl2020.json and perform the following:
+
+Json data to Java => Jackson 
+
+
+
+Design application ( class diagrams) 
+
+Team
+  
+Player
+
+
+
+
+1. Get all the team labels
+2. Get all players of the given team
+3. Get role wise count of given team
+4. Get Player details by role and team
+5. Get all team details
+6. Get amount spent by each team
+7. Get amount spent on role by the team
+8. Display all the player details sory by given field
+9. Get Max Paid players of all roles
+
+
+
+1. public List<String> getTeamLabels()
+2. public List<PlayerDTO> getPlayerByTeam(String label)
+3. Public List<RoleCountDTO> getCountByRole(String label)
+4. public List<PlayerDTO> getPlayerByTeamAndRole(String label, String role)
+5. public List<TeamDTO> getAllTeamDetails()
+6. public List<TeamAmountDTO> getAmountSpentByTeams()
+7. public List<TeamAmountByRoleDTO> getAmountSpentByTeamAndRole(String label,String role)
+8. public List<PlayerDTO> getPlayersBySort(String fieldName)
+9. public Map<String,List<PlayerDTO>> getMaxPaidPlayersByRole()
+
+
+TeamAmountByRoleDTO{
+	label string
+	role  string
+	amount double
+}
+
+TeamAmountDTO{
+   label string
+   amount double
+}
+PlayerDTO{
+    name  string
+    price double
+    role  string
+ 
+
+}
+
+RoleCountDTO{
+    roleName string
+    count int
+}
+
+TeamDTO{
+
+	city string
+	home string
+	coach string
+	team  string
+	label string
+
+}
